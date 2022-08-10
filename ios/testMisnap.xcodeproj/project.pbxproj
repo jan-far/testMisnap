@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* testMisnapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* testMisnapTests.m */; };
-		135B6F3728A2548700364BB2 /* libPods-testMisnap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-testMisnap.a */; };
 		135B701328A25A0F00364BB2 /* misnap_powered_by_mitek.png in Resources */ = {isa = PBXBuildFile; fileRef = 135B6F4628A25A0F00364BB2 /* misnap_powered_by_mitek.png */; };
 		135B701428A25A0F00364BB2 /* MiSnapSDKLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 135B6F4828A25A0F00364BB2 /* MiSnapSDKLocalizable.strings */; };
 		135B701528A25A0F00364BB2 /* misnap_tutorial_id_with_background_portrait_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 135B6F4A28A25A0F00364BB2 /* misnap_tutorial_id_with_background_portrait_2.jpg */; };
@@ -193,8 +192,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		13C4C9AD28A318D9008EE891 /* libPods-testMisnap-testMisnapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4752CA0724B85A4C5F956E /* libPods-testMisnap-testMisnapTests.a */; };
+		13C4C9AE28A32B7A008EE891 /* libPods-testMisnap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-testMisnap.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8868AB3457C80D828023CA0F /* libPods-testMisnap-testMisnapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4752CA0724B85A4C5F956E /* libPods-testMisnap-testMisnapTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -420,7 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				135B70C828A25CB700364BB2 /* BuildFile in Frameworks */,
-				8868AB3457C80D828023CA0F /* libPods-testMisnap-testMisnapTests.a in Frameworks */,
+				13C4C9AD28A318D9008EE891 /* libPods-testMisnap-testMisnapTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +428,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				135B6F3728A2548700364BB2 /* libPods-testMisnap.a in Frameworks */,
+				13C4C9AE28A32B7A008EE891 /* libPods-testMisnap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

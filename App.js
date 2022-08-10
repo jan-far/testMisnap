@@ -11,6 +11,7 @@ import {
   Button,
   SafeAreaView,
   StatusBar,
+  StyleSheet,
   Text,
   useColorScheme,
   View,
@@ -27,9 +28,6 @@ function App() {
       captureType: captureType,
       autocapture: true,
       livenessLicenseKey: 'MISNAP_LIVENESS_LICENSE_KEY',
-      glare: 0.5,
-      imageQuality: 1.0,
-      contrast: 0.5,
     };
 
     MiSnapManager.capture(config)
@@ -54,10 +52,10 @@ function App() {
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <View style={{alignItems: 'center', justifyContent: 'center', flex: 1}}>
-        <Text style={{fontSize: 24, fontWeight: 'bold'}}>Capture Types</Text>
+      <View style={styles.container}>
+        <Text style={styles.header}>Capture Types</Text>
         {['idFront', 'idBack', 'face'].map((type, i) => (
-          <View key={i} style={{marginVertical: 15, width: 100}}>
+          <View key={i} style={styles.buttonWrapper}>
             <Button onPress={() => setCaptureType(type)} title={type} />
           </View>
         ))}
@@ -67,3 +65,9 @@ function App() {
 }
 
 export default App;
+
+const styles = StyleSheet.create({
+  container: {alignItems: 'center', justifyContent: 'center', flex: 1},
+  header: {fontSize: 20, fontWeight: 'bold', marginBottom: 10},
+  buttonWrapper: {marginVertical: 15, width: 100},
+});

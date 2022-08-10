@@ -8,8 +8,6 @@ production = ENV["PRODUCTION"] == "1"
 
 target 'testMisnap' do
   config = use_native_modules!
-  
-  # pod 'RNMisnap', :path => '../node_modules/react-native-misnap'
 
   # Flags change depending on the env values.
   flags = get_default_flags()
@@ -18,7 +16,7 @@ target 'testMisnap' do
     :path => config[:reactNativePath],
     # to enable hermes on iOS, change `false` to `true` and then install pods
     :production => production,
-    :hermes_enabled => false,
+    :hermes_enabled => flags[:hermes_enabled],
     :fabric_enabled => flags[:fabric_enabled],
     :flipper_configuration => FlipperConfiguration.enabled,
     # An absolute path to your application root.
